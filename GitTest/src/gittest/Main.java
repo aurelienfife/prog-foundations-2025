@@ -6,6 +6,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Hello");
+		
+		int age = 50 / 0;
 	}
 
 }
