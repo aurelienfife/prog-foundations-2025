@@ -1,6 +1,8 @@
 package functiondemo;
 
 public class MainClass {
+	
+	public String keywordOfTheWeek = "APPLEPIE";
 
 	// public: visible from outside
 	// static: can be called without creating an object
