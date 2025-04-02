@@ -44,6 +44,30 @@ public class Exercises {
 		// Create an empty list, add 10 names
 		ArrayList<String> students = new ArrayList<String>();
 		
+		// Input 10 names
+		for(int i = 0; i < 10; i++)
+		{
+			// Input a new name add to ArrayList
+			System.out.print("Enter a name: ");
+			String newName = sc.nextLine();
+			// Conversion to lower case for exercise purpose
+			// (case insensitive search)
+			students.add(newName.toLowerCase());
+		}
+		
+		// Ask and get a search term from user
+		System.out.print("What name do you want to search? ");
+		
+		String searchTerm = sc.nextLine();
+		// Search using indexOf
+		int searchResult = students.indexOf(searchTerm.toLowerCase());
+		
+		if(searchResult == -1) {
+			System.out.println(searchTerm + " has not been found.");
+		}
+		else {
+			System.out.println(searchTerm + " has been found at index: " + searchResult);
+		}
 		
 	}
 

@@ -1,0 +1,80 @@
+7.	Ask the user how many bags of straw they think we will need to cover a floor of that size. 
+
+Straw costs £6 per bag, and postage and packing are £3 if we order 6 bags or less. If we order more than 6 bags, p&p are free. Calculate the total cost for the suggested order, and let the user know. 
+
+Ask if the user wants to continue with the purchase, they should answer y or n
+
+Questions: 
+	To work with currency, what type of variable is best?
+
+How can we make this code work regardless of whether the user enters Y or y, n or N?
+
+How do we compare strings in Java? Try using == and you may not get the result you expect!
+
+=====================
+
+Collections:
+
+Task 1 - 
+Write a program that stores 10 pupil names in a list. Ask the user to enter a name to search for in the list and output a suitable message if the name is found or not found in the list.
+In the Task1 method in WeekTwoExercises
+•	Create an ArrayList to hold Strings
+•	Add 10 names to this list using the Add method (they can be anything you like)
+•	Ask the user to provide a name to search for and display an appropriate message
+•	Make sure your search is not case sensitive
+Your code to create and populate the list should look something like this:
+ 
+Questions:
+•	What ArrayList method can you use to perform the search?
+•	How will you make your search case insensitive?
+
+====================
+
+Task 3:      (?)
+
+A price list is not much use if you don’t know what the prices are for!
+Using a HashMap, we can link each price to a specific item by storing them as key/value pairs
+In this case, we will create a new menu for a café.
+In the Task3 method create an empty instance of a HashMap, telling it the key for each pair will be a string, and the value will be a double. The key will be the dish name, and the value is the cost of that item. This will look something like this: 
+ 
+You may need to import the Java HashMap library – Eclipse will prompt you with an error if so
+Question: 
+•	Why would we choose to use the dish name as the key rather than the price? 
+Ask for the name of the café creating the menu, then use a While loop to ask the user to enter dish name and their cost. Each time, add the new dish to the HashMap and loop round to ask them to enter another. This will continue until the user asks to stop.
+Once the user is finished entering dishes, display the finished menu as neatly as possible.  
+Hint: There are a number of ways to format console output to line up your menu nicely. Try researching Java’s printf command, using a C-style format string. Or try another method
+ 
+
+====================
+
+String:
+
+
+Task 1:
+Assign the string “A rose by any other name would smell as sweet” to a String variable called rosePoem. 
+Create an ArrayList<String> called individualWords and use the String split() method to get each word in rosePoem and add each word to the individualWords list. 
+Consider: what does the split() method return? 
+Consider: how does the split() method know where to split?
+Print the words in individualWords to the console, one word per line.
+Find and print the length of rosePoem – what does this length mean? 
+Change the rosePoem string to all upper case and print it out
+Replace the word “rose” in the rosePoem with the word “daffodil”. What String method will you use for that? 
+
+Task 2:
+Ask the user to enter a some text, and store it in a variable called userString.
+Tell the user: 
+•	The string they entered
+•	How long the string they entered is
+•	How many words are in the string they entered (there are various ways of doing this, you could use split() or charAt() for instance)
+•	What character is third in the string they entered
+•	Whether or not the string they entered contained the word “carrot” (test this with and without carrot in the input string!)
+
+Now find out whether any words are repeated in the string. Tell the user which words are duplicated, if any. This is a slightly trickier problem, there are a few things to think about and you might have to do some research:
+o	How will you ensure your result is not skewed by case or punctuation?
+o	How will you check for the duplicate words?
+o	How will you store the words that are duplicated so you can tell the user about them?
+o	Note: A HashMap might be useful in solving the last two questions 
+
+
+========
+

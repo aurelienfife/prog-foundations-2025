@@ -7,7 +7,8 @@ public class MainClass {
 		Exercises e = new Exercises();
 		
 		// Bags of straw
-		e.StrawBags();
+		//e.StrawBags();
+		e.studentSearch();
 
 	}
 
