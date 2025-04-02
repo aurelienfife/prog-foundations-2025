@@ -1,18 +1,27 @@
 package inclassexercises;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Exercises {
+	
+	// Scanner used by all exercises, declared at class-level
+	private Scanner sc;
+	
+	// Constructor function initialises anything that needs to be
+	// when creating object
+	public Exercises() {
+		sc = new Scanner(System.in);
+	}
+	
+	
 
 	public void StrawBags() {
 		// Variation on the 'Bag of grit'
 		// Exercise
 		double UNITPRICE = 6.0;
 		double SHIPPING = 3.0;
-		
-		// Scanner used for the whole exercise
-		Scanner sc = new Scanner(System.in);
-		
+				
 		// Ask user for quantity and read value from kbd
 		System.out.print("How many bags do you want?     ");
 		int quantity = sc.nextInt();
@@ -27,10 +36,15 @@ public class Exercises {
 			total += SHIPPING;
 			System.out.println("Total after shipping cost: " + total + " GBP");
 		}
-		
-		sc.close();
 	}
 
-
+	
+	public void studentSearch() {
+		
+		// Create an empty list, add 10 names
+		ArrayList<String> students = new ArrayList<String>();
+		
+		
+	}
 
 }
