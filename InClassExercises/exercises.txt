@@ -35,14 +35,17 @@ Task 3:      (?)
 A price list is not much use if you don’t know what the prices are for!
 Using a HashMap, we can link each price to a specific item by storing them as key/value pairs
 In this case, we will create a new menu for a café.
-In the Task3 method create an empty instance of a HashMap, telling it the key for each pair will be a string, and the value will be a double. The key will be the dish name, and the value is the cost of that item. This will look something like this: 
+In the Task3 method create an empty instance of a HashMap, telling it the key for each pair will be a string,
+ and the value will be a double. 
+ The key will be the dish name, and the value is the cost of that item. 
+ This will look something like this: 
  
 You may need to import the Java HashMap library – Eclipse will prompt you with an error if so
 Question: 
 •	Why would we choose to use the dish name as the key rather than the price? 
-Ask for the name of the café creating the menu, then use a While loop to ask the user to enter dish name and their cost. Each time, add the new dish to the HashMap and loop round to ask them to enter another. This will continue until the user asks to stop.
-Once the user is finished entering dishes, display the finished menu as neatly as possible.  
-Hint: There are a number of ways to format console output to line up your menu nicely. Try researching Java’s printf command, using a C-style format string. Or try another method
+
+Hint: There are a number of ways to format console output to line up your menu nicely. 
+Try researching Java’s printf command, using a C-style format string. Or try another method
  
 
 ====================
@@ -55,10 +58,13 @@ Assign the string “A rose by any other name would smell as sweet” to a Strin
 Create an ArrayList<String> called individualWords and use the String split() method to get each word in rosePoem and add each word to the individualWords list. 
 Consider: what does the split() method return? 
 Consider: how does the split() method know where to split?
+
 Print the words in individualWords to the console, one word per line.
 Find and print the length of rosePoem – what does this length mean? 
 Change the rosePoem string to all upper case and print it out
-Replace the word “rose” in the rosePoem with the word “daffodil”. What String method will you use for that? 
+
+Replace the word “rose” in the rosePoem with the word “daffodil”.
+What String method will you use for that? 
 
 Task 2:
 Ask the user to enter a some text, and store it in a variable called userString.

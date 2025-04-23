@@ -2,6 +2,8 @@ package inclassexercises;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Collections;
 
 public class Exercises {
 	
@@ -13,9 +15,55 @@ public class Exercises {
 	public Exercises() {
 		sc = new Scanner(System.in);
 	}
-	
-	
 
+	/**
+	 * Task 3 of iLearn "Java Collections"
+	 * This exercises demonstrates how to create a HashMap to store k/v pairs.
+	 * Additionally it covers how to transform data using different
+	 * collections types when a collection is not appropriate (e.g. here we need
+	 * to sort keys alphabetically, hence the creation of an "intermediate"
+	 * ArrayList.
+	 * 
+	 * It also covers the use of System.out.printf() to display formatted strings.
+	 */
+	public void cafeMenu() {
+		
+		// Store a menu in a HashMap
+		HashMap<String, Double> menu = new HashMap<String, Double>();
+		
+		menu.put("Coffee", 2.5);
+		menu.put("Soup", 3.);
+		menu.put("Sandwich", 5.0);
+		menu.put("Sauce", .5);
+		menu.put("Chips", 3.0);
+		
+		//System.out.println(menu);
+		
+		// Display the menu 
+		// The HashMap is not sortable, neither is the keySet.
+		// to display keys alphabetically we need to create an intermediate ArrayList
+		// and sort it
+		ArrayList<String> sortedKeys = new ArrayList<String>(menu.keySet());
+		Collections.sort(sortedKeys);
+		
+		System.out.println("Welcome to the café!\n\n");
+		
+		// Now we can loop through the sorted keys
+		for(String dish: sortedKeys) {
+			
+			// Retrieve price from HashMap
+			Double price = menu.get(dish);
+			//System.out.println(dish);
+			
+			System.out.printf("%8s\t£%.2f%n" , dish, price);
+		}
+		
+		
+	}
+	
+	/**
+	 * This exercise aims to consolidate general I/O, calculations and if/else.
+	 */
 	public void StrawBags() {
 		// Variation on the 'Bag of grit'
 		// Exercise
@@ -38,7 +86,11 @@ public class Exercises {
 		}
 	}
 
-	
+	/**
+	 * This exercise is about general use of ArrayLists.
+	 * It uses indexOf() for search - more efficient than
+	 * writing your own search.
+	 */
 	public void studentSearch() {
 		
 		// Create an empty list, add 10 names

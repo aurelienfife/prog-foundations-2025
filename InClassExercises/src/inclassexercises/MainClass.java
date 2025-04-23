@@ -8,7 +8,8 @@ public class MainClass {
 		
 		// Bags of straw
 		//e.StrawBags();
-		e.studentSearch();
+		//e.studentSearch();
+		e.cafeMenu();
 
 	}
 
