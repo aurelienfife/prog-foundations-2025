@@ -55,6 +55,8 @@ public class Exercises {
 			Double price = menu.get(dish);
 			//System.out.println(dish);
 			
+			// This is using string formatting syntax
+			// See: https://www.w3schools.com/java/ref_output_printf.asp
 			System.out.printf("%8s\t£%.2f%n" , dish, price);
 		}
 		
